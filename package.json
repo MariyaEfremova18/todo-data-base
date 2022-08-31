@@ -1,0 +1,27 @@
+{
+  "name": "myapp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build-production": "node build",
+    "start": "nodemon --exec babel-node ./app.mjs",
+    "sequelize": "babel-node node_modules/.bin/sequelize $*"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.19",
+    "pg": "^8.8.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.21.4",
+    "sequelize-cli": "^6.4.1",
+    "tedious": "^15.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.18.13",
+    "@babel/node": "^7.18.10",
+    "@babel/preset-env": "^7.18.10"
+  }
+}
